@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  height: 100px;
+  align-items: center;
+}
+
+.section_nav nav {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.section_nav nav li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.section_nav nav li a.active{
+    background-color: #5c48ee;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+}
+.section_nav nav li a.active:hover{
+   background-color: #0f1e6a;
+}
+
+.section_nav nav li:not(:last-child) a:hover {
+  color: #5c48ee;
+}
+
+.section_nav .logo_nav a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5c48ee;
+}
