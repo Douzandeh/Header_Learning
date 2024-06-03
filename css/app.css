@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+img{
+  width: 100%;
+}
+
 .section_nav {
   display: flex;
   justify-content: space-between;
@@ -64,4 +68,23 @@ li {
   font-size: 1.5rem;
   font-weight: 500;
   color: #5c48ee;
+}
+
+
+.section_content_header{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  max-width: 1200px;
+  margin: auto;
+  gap: 5rem;
+}
+
+.right_content_header{
+  display: grid;
+  grid-template-columns:repeat(2 , 1fr);
+  gap: 2rem;
+}
+
+.right_content_header img{
+  max-width: 300px;
 }
