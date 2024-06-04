@@ -18,7 +18,7 @@ li {
   list-style: none;
 }
 
-img{
+img {
   width: 100%;
 }
 
@@ -50,14 +50,14 @@ img{
   -o-transition: all 0.3s ease;
 }
 
-.section_nav nav li a.active{
-    background-color: #5c48ee;
-    color: #fff;
-    border-radius: 5px;
-    padding: 0.5rem 2rem;
+.section_nav nav li a.active {
+  background-color: #5c48ee;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
 }
-.section_nav nav li a.active:hover{
-   background-color: #0f1e6a;
+.section_nav nav li a.active:hover {
+  background-color: #0f1e6a;
 }
 
 .section_nav nav li:not(:last-child) a:hover {
@@ -70,21 +70,72 @@ img{
   color: #5c48ee;
 }
 
-
-.section_content_header{
+.section_content_header {
   display: grid;
-  grid-template-columns: repeat(2 , 1fr);
+  grid-template-columns: repeat(2, 1fr);
   max-width: 1200px;
   margin: auto;
   gap: 5rem;
 }
 
-.right_content_header{
+.left_content_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_content_header h1 {
+  font-size: 3rem;
+  width: 100%;
+  line-height: 3.5rem;
+}
+
+.left_content_header h1 span:nth-child(1) {
+  font-weight: 400;
+}
+.left_content_header h1 span:nth-child(2) {
+  font-weight: 700;
+  color: #0f1e6a;
+}
+
+.left_content_header h1 span:nth-child(3) {
+  font-weight: 700;
+  color: #5c48f2;
+}
+
+.left_content_header p {
+  margin: 1rem 0;
+  color: #333333;
+}
+.left_content_header form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.left_content_header form input {
+  border: none;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  font-size: 0.8rem;
+  max-width: 300px;
+  width: 100%;
+}
+.left_content_header form button {
+  border: none;
+  background-color: #5c48f2;
+  color: #fff;
+  padding: 1rem;
+  white-space: nowrap;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.right_content_header {
   display: grid;
-  grid-template-columns:repeat(2 , 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-.right_content_header img{
+.right_content_header img {
   max-width: 300px;
 }
